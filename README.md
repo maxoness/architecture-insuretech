@@ -3,7 +3,7 @@
 
 [Доп задание. terraform config](terraform/main.tf)
 
-[Новая технологическая архитектура](Task1/main.tf)
+[Новая технологическая архитектура](Task1/InsureTech.drawio)
 
 [Новая технологическая архитектура](Task1/InsureTech_технологическая архитектура.drawio)
 
