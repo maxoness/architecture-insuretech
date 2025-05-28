@@ -67,13 +67,13 @@ minikube service prometheus-operator-kube-p-prometheus --url
 ![Scaletestapp Target в Prometheus](Task2/additional/scaletestapp-app-sm-target.jpg)
 ### 2.2.5 Настроить Prometheus Adapter для использования метрик Prometheus в Horizontal Pod Autoscaler
 ```shell
-helm install prometheus-adapter prometheus-community/prometheus-adapter -f ./Task2/additional/values.yaml
+helm install prometheus-adapter prometheus-community/prometheus-adapter -f ./Task2/additional/custom_metrics.yaml
 ```
 ### 2.2.6 Проверить что кастомная метрика добавилась
 ```shell
 get --raw /apis/custom.metrics.k8s.io/v1beta1
 ```
-![Custom metrics в v1beta1](Task2/additional/custom_values.jpg)
+![Custom metrics в v1beta1](Task2/additional/custom_metrics.jpg)
 
 ### 2.2.7 Обновить манифест Horizontal Pod Autoscaler с использованием новой метрики
 
@@ -97,3 +97,4 @@ locust -f ./task2/locustfile.py
 
 [Лог HPA](Task2/additional/scaling_describe_hpa.jpg)
 ![Лог HPA](Task2/additional/scaling_describe_hpa.jpg)
+## Task3 Переход на Event-Driven архитектуру
