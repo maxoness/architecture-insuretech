@@ -1,0 +1,33 @@
+# GraphQL схема сервиса управления клиентскими данными
+
+type Query {
+  # Client by ID
+  client(id: String!): Client
+
+  # Documents by ID
+  clientDocuments(id: String!): [Document]
+
+  # Relatives by ID
+  clientRelatives(id: String!): [Relative]
+}
+
+type Client {
+  id: String!
+  name: String!
+  age: Int
+}
+
+type Document {
+  id: String!
+  type: String!
+  number: String!
+  issueDate: String!
+  expiryDate: String
+}
+
+type Relative {
+  id: String!
+  relationType: String!
+  name: String!
+  age: Int
+}
