@@ -158,3 +158,7 @@ locust -f ./task2/locustfile.py
 ### 4.5 Обновленная диаграмма контейнеров C4
 [Обновленная диаграмма контейнеров C4](Task4/InsureTech_C4_сontainer-diagram-tobe.jpg)
 ![Обновленная диаграмма контейнеров C4](Task4/InsureTech_C4_сontainer-diagram-tobe.jpg)
+## task 5 Проектирование GraphQL API
+[GraphQL client-inf](Task5/client-info.gql)
+## task 6 Настройка Rate Limiting
+[Конфиг Nginx](Task6/nginx.conf)
